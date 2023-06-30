@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_WalletLibAddressBech32_WalletLibAddressBech32Tests : NSObject
+@end
+@implementation PodsDummy_Pods_WalletLibAddressBech32_WalletLibAddressBech32Tests
+@end

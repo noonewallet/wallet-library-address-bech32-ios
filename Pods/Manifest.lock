@@ -1,0 +1,16 @@
+PODS:
+  - WalletLibCrypto (1.0)
+
+DEPENDENCIES:
+  - WalletLibCrypto (from `Submodule/WalletLibCrypto`)
+
+EXTERNAL SOURCES:
+  WalletLibCrypto:
+    :path: Submodule/WalletLibCrypto
+
+SPEC CHECKSUMS:
+  WalletLibCrypto: 579d8265f0e7009f902d8c82065f21af87d2d91e
+
+PODFILE CHECKSUM: 811e73e023d2796d629835863b1c5fe5a7b79dcd
+
+COCOAPODS: 1.11.2

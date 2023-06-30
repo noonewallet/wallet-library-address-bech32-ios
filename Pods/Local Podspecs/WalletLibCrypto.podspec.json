@@ -1,0 +1,37 @@
+{
+  "name": "WalletLibCrypto",
+  "version": "1.0",
+  "summary": "The WalletLibCrypto library is an implementation of tools for working with cryptocurrencies",
+  "homepage": "https://github.com/noonewallet/wallet-library-crypto-ios",
+  "license": "MIT",
+  "authors": "WalletLibCrypto",
+  "platforms": {
+    "ios": "11.0",
+    "osx": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/noonewallet/wallet-library-crypto-ios.git",
+    "tag": "v1.0"
+  },
+  "swift_versions": "5.0",
+  "ios": {
+    "vendored_libraries": "WalletLibCrypto/OpenSSL/libraries/libcrypto-ios.a"
+  },
+  "osx": {
+    "vendored_libraries": "WalletLibCrypto/OpenSSL/libraries/libcrypto-osx.a"
+  },
+  "source_files": [
+    "WalletLibCrypto/WalletLibCrypto.h",
+    "WalletLibCrypto/PrivateHeaders/*{h}",
+    "WalletLibCrypto/**/*{m,c,swift}",
+    "WalletLibCrypto/OpenSSL"
+  ],
+  "module_map": "WalletLibCrypto/WalletLibCrypto.modulemap",
+  "private_header_files": "WalletLibCrypto/PrivateHeaders/**/*{h}",
+  "pod_target_xcconfig": {
+    "SWIFT_INCLUDE_PATHS": "/Users/luname/workspace/noone-repos/wallet-library-address-bech32-ios/Submodule/WalletLibCrypto/WalletLibCrypto/OpenSSL/libraries/**",
+    "LIBRARY_SEARCH_PATHS": "/Users/luname/workspace/noone-repos/wallet-library-address-bech32-ios/Submodule/WalletLibCrypto/WalletLibCrypto/OpenSSL/libraries/**",
+    "HEADER_SEARCH_PATHS": "/Users/luname/workspace/noone-repos/wallet-library-address-bech32-ios/Submodule/WalletLibCrypto/WalletLibCrypto/OpenSSL/headers/**"
+  },
+  "swift_version": "5.0"
+}
