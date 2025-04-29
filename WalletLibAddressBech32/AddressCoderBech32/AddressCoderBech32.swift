@@ -5,8 +5,7 @@
 //
 
 import Foundation
-import WalletLibCrypto.Bech32
-
+import WalletLibCryptoSwift
 
 public struct AddressCoderBech32 {
     

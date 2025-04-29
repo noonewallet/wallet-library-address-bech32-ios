@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "wallet-library-crypto-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/noonewallet/wallet-library-crypto-ios.git",
+      "state" : {
+        "branch" : "feature/spm-support",
+        "revision" : "dadbb1376eaf200b97e057697ba649c0b2666f53"
+      }
+    }
+  ],
+  "version" : 2
+}

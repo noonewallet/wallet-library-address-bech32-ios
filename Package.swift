@@ -8,19 +8,23 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "WalletLibraryAddressBech32IOS",
-            targets: ["WalletLibraryAddressBech32IOS"]
+            name: "WalletLibAddressBech32",
+            targets: ["WalletLibAddressBech32"]
         )
+    ],
+    dependencies: [
+        .package(url: "https://github.com/noonewallet/wallet-library-crypto-ios.git", branch: "feature/spm-support")
     ],
     targets: [
         .target(
-            name: "WalletLibraryAddressBech32IOS",
-            path: "Sources/WalletLibraryAddressBech32IOS"
+            name: "WalletLibAddressBech32",
+            dependencies: [
+                .product(name: "WalletLibCryptoSwift", package: "wallet-library-crypto-ios")
+            ]
         ),
         .testTarget(
-            name: "WalletLibraryAddressBech32IOSTests",
-            dependencies: ["WalletLibraryAddressBech32IOS"],
-            path: "Tests/WalletLibraryAddressBech32IOSTests"
+            name: "WalletLibAddressBech32Tests",
+            dependencies: ["WalletLibAddressBech32"]
         )
     ]
 )
